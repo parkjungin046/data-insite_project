@@ -1,7 +1,23 @@
 # web/src/
 
-실제 웹사이트 코드(대시보드)가 들어가는 폴더입니다. (담당: C)
+실제 웹사이트(의사결정 대시보드) 코드가 들어가는 폴더입니다. (담당: C)
 
-- 지도/차트를 실제로 화면에 구현
-- B의 analysis/ 결과물, data/ 데이터를 연동
-- 사용할 프레임워크가 정해지면 그 구조에 맞게 이 폴더 안을 채웁니다.
+**기술 스택: Streamlit (Python)**
+
+## 로컬에서 실행하기
+
+```bash
+pip install -r requirements.txt
+streamlit run web/src/app.py
+```
+
+브라우저가 자동으로 열리며 `http://localhost:8501`에서 확인할 수 있습니다.
+
+## 배포
+
+완성 후 [Streamlit Community Cloud](https://streamlit.io/cloud)에 GitHub 저장소를 연결하면 무료로 공개 URL을 받을 수 있습니다.
+
+## 데이터 연동
+
+- B의 `analysis/` 폴더 분석 결과(CSV, GeoJSON 등)를 불러와 지도·차트로 시각화
+- A의 `outputs/` 폴더 최종 계획도를 계획안 탭에 표시

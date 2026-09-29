@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# 용량 큰 원자료는 data/README.md에 다운로드 링크만 기록하고, 실제 파일은 커밋하지 않는 것을 권장
+# (필요시 팀 협의 후 개별 파일만 예외 처리)
+
+# OS
+.DS_Store
+Thumbs.db
